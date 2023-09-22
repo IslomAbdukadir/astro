@@ -1,0 +1,354 @@
+@import "font.css";
+
+:root {
+    --accent: #45d1b1;
+    --text: #58595b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 65px;
+    color: #fff;
+    text-align: center;
+}
+
+/* header start */
+
+/* .header-nav {
+    
+} */
+
+.header-nav {
+    background: rgba(0, 0, 0, 0.80);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.header-nav .container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-list {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+}
+
+.header-link {
+    font-size: 20px;
+    color: #d1d1e3;
+    transition: .6s;
+}
+
+.header-link:hover {
+    color: #fff;
+}
+
+.header-num {
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+/* header start */
+
+/* section start */
+
+main {
+    background: #000;
+}
+
+/* banner start */
+
+.banner {
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-info {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.banner-subtitle {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* banner end */
+
+/* stat start */
+
+.stat-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0;
+}
+
+.stat-card {
+    width: 360px;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid #262B33;
+}
+
+.stat-card-big {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.stat-card-small {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* stat end */
+
+/* course start */
+
+#course {
+    padding: 100px 0 50px;
+}
+
+.course-title {
+    margin-bottom: 50px;
+}
+
+.course-select {
+    display: flex;
+    justify-content: space-between;
+    color: #C2C2C2;
+    margin-bottom: 50px;
+}
+
+.select {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.select.active {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.course-line {
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 50px;
+}
+
+.course-line-big {
+    color: #fff;
+    display: flex;
+    column-gap: 50px;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    padding: 25px;
+    width: 100%;
+}
+
+.course-info {
+    width: 100%;
+}
+
+.course-info-author {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.course-info-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.course-info-title span {
+    color: #E42652;
+}
+
+.course-line-small {
+    max-width: 270px;
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    padding: 50px 15px 30px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.course-start-date {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.course-start-modal {
+    border-radius: 30px;
+    background: #3F3F3F;
+    padding: 10px 50px;
+    color: #FFF;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.course-start-modal:hover {
+    background: #E42652;
+}
+
+
+/* course end */
+
+/* modal */
+
+.modal {
+    position: relative;
+    z-index: 3;
+}
+
+.modal__container {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.modal__title {
+    text-align: center;
+    width: 100%;
+    color: #454545;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+}
+
+.modal__close {
+    opacity: 0.4;
+    transition: 0.5 .6s;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    opacity: 1;
+}
+
+.modal__footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* modal form */
+
+form input,
+form textarea {
+    width: 100%;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.button {
+    background: #454545;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* modal */
+
+/* why start */
+
+
+
+/* why end */
+
+/* section end */
+
+/* about start */
+
+
+
+/* about end */
