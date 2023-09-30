@@ -1,6 +1,13 @@
-@media (max-width: 1600px) {
+@media (max-width: 1680px) {
     .container {
         max-width: 1440px;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: 80%;
+        -o-object-fit: cover;
+        object-fit: cover;
     }
 }
 
@@ -13,6 +20,11 @@
 @media (max-width: 1336px) {
     .container {
         max-width: 1290px;
+    }
+
+    .benefit-box {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
     }
 }
 
@@ -68,11 +80,184 @@
     .container {
         max-width: 414px;
     }
+
+    .banner {
+        overflow-x: hidden;
+    }
+
+    .stat-cards {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 15px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .banner-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .banner-subtitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .banner-img {
+        width: 35%;
+        height: 100%;
+    }
+
+    .request-cards {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .benefit-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .benefit-box-tag {
+        font-size: 30px;
+    }
+
+    .benefit-box-right {
+        gap: 15px;
+    }
+
+    .course-line-small {
+        display: none;
+    }
+
+    .course-info-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        line-height: 35px;
+    }
+
+    .course-info-txt,
+    .course-info-tutor,
+    .course-info-tutor {
+        font-size: 14px;
+    }
+
+    .course-line-big {
+        -webkit-column-gap: 50px;
+        -moz-column-gap: 50px;
+        column-gap: 20px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .course-line-img {
+        max-width: 160px;
+        height: 240px;
+        background: url(../img/Saidbek\ kichkina.png) no-repeat center/cover;
+        overflow: hidden;
+    }
+
+    .rustam {
+        background: url(../img/rustam\ kickina.png) no-repeat center/cover;
+    }
+
+    .nilufar {
+        background: url(../img/nilufar\ kichkina.png) no-repeat center/cover;
+    }
+
+    .course-line-img img {
+        display: none;
+    }
+
+    .course-info-author {
+        margin-top: 10px;
+    }
+
+    .course-info-author {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .benefit-box-big,
+    .benefit-box-small {
+        width: 435px;
+        height: 220px;
+    }
+
+    .benefit-box-big {
+        background: url(../img/saidbeklong.png) no-repeat bottom right/cover;
+    }
+
+    .how-title {
+        font-size: 30px;
+    }
+
+    .how-subtitle {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .footer-list:nth-of-type(1) {
+        display: none;
+    }
+
+    .footer .container:nth-of-type(2) {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .header-num {
+        font-size: 20px;
+        padding: 1px 20px;
+    }
+
+    .footer .container {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .card__price {
+        font-size: 1.55em;
+    }
 }
 
 @media (max-width: 414px) {
     .container {
         max-width: 390px;
+    }
+
+    .benefit-box-big,
+    .benefit-box-small {
+        max-width: 390px;
+        width: 100%;
+        height: 180px;
+    }
+
+    .benefit-box-tag {
+        font-size: 25px;
+    }
+
+    .benefit-box-btn {
+        padding: 6px 27px;
     }
 }
 
