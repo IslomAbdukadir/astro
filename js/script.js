@@ -90,3 +90,12 @@ const initOverlayCard = (cardEl) => {
 
 cards.forEach(initOverlayCard);
 document.body.addEventListener("pointermove", applyOverlayMask);
+
+// 
+
+var random = Math.floor((Math.random() * 2000)) + 500;
+$(document).ready(function () {
+    setTimeout(function () {
+        $('body').addClass('loaded');
+    }, random);
+});
